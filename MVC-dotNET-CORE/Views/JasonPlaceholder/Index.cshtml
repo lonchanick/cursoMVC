@@ -1,0 +1,16 @@
+﻿@model List<MVC_dotNET_CORE.Models.DB.JasonPlaceholder>
+
+@*@Model List<
+@{
+    ViewData["Title"] = "Index";
+}*@
+
+<h1>Index</h1>
+@foreach (var item in Model)
+{
+    <span>@item.Id</span><br/>
+    <span>@item.UserId</span><br/>
+    <span>@item.Title</span><br />
+    <span>@item.Body</span><br />
+    <hr><hr />
+}

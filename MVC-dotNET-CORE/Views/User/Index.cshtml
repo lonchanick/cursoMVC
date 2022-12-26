@@ -1,0 +1,21 @@
+﻿
+@model List<MVC_dotNET_CORE.Models.ModelUser>
+@{
+    ViewData["Title"] = "Index";
+    string name = "Lonchanick";
+}
+
+<h1>Index</h1>
+<h3>@name</h3>
+
+@for(int i=0; i<100; i++)
+{
+    <b>@i</b>
+}
+
+@foreach (var item in Model)
+    {
+        <bold>Nombre: </bold>@item.Nombre<br />
+        <bold>Edad: </bold>@item.Edad
+    }
+    
